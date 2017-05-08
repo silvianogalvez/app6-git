@@ -1,0 +1,251 @@
+<!doctype html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <title>Tercera  Aplicacion</title>
+
+    <!--grupo CSS-->
+    <!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+<script type="text/javascript" src="engine1/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+    <link rel="stylesheet" href="css/tema-app6.min.css"/>
+    <link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+    <link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+    <!--grupo JavaScript-->
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script src="js/jquery.mobile-1.4.5.min.js"></script>
+	<script src="js/acciones.js"></script>
+	<script src="phonegap.js"></script>
+	<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+    </script>
+  </head>
+
+ <body onLoad="MM_preloadImages('imagenes/batalla.jpg','imagenes/batalla6.jpg','imagenes/batalla3.jpg','imagenes/batalla8.jpg')">
+
+	<div data-role="page" id="Principal" data-theme="a">
+	  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" 	data-back-btn-theme="b">
+		<h1>BATALLA DE PUEBLA (5 DE MAYO)</h1>
+        </div>
+		<!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container1">
+<div class="ws_images"><ul>
+		<li><img src="data1/images/batalla.jpg" alt="batalla" title="batalla" id="wows1_0"/></li>
+		<li><img src="data1/images/batalla2.jpg" alt="batalla2" title="batalla2" id="wows1_1"/></li>
+		<li><img src="data1/images/batalla3.jpg" alt="batalla3" title="batalla3" id="wows1_2"/></li>
+		<li><img src="data1/images/batalla4.jpg" alt="batalla4" title="batalla4" id="wows1_3"/></li>
+		<li><img src="data1/images/batalla5.jpg" alt="batalla5" title="batalla5" id="wows1_4"/></li>
+		<li><img src="data1/images/batalla6.jpg" alt="batalla6" title="batalla6" id="wows1_5"/></li>
+		<li><a href="http://wowslider.net"><img src="data1/images/batalla7.jpg" alt="jquery slider" title="batalla7" id="wows1_6"/></a></li>
+		<li><img src="data1/images/batalla8.jpg" alt="batalla8" title="batalla8" id="wows1_7"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title="batalla"><span><img src="data1/tooltips/batalla.jpg" alt="batalla"/>1</span></a>
+		<a href="#" title="batalla2"><span><img src="data1/tooltips/batalla2.jpg" alt="batalla2"/>2</span></a>
+		<a href="#" title="batalla3"><span><img src="data1/tooltips/batalla3.jpg" alt="batalla3"/>3</span></a>
+		<a href="#" title="batalla4"><span><img src="data1/tooltips/batalla4.jpg" alt="batalla4"/>4</span></a>
+		<a href="#" title="batalla5"><span><img src="data1/tooltips/batalla5.jpg" alt="batalla5"/>5</span></a>
+		<a href="#" title="batalla6"><span><img src="data1/tooltips/batalla6.jpg" alt="batalla6"/>6</span></a>
+		<a href="#" title="batalla7"><span><img src="data1/tooltips/batalla7.jpg" alt="batalla7"/>7</span></a>
+		<a href="#" title="batalla8"><span><img src="data1/tooltips/batalla8.jpg" alt="batalla8"/>8</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.com/vi">css slider</a> by WOWSlider.com v8.7</div>
+<div class="ws_shadow"></div>
+</div>	
+<script type="text/javascript" src="engine1/wowslider.js"></script>
+<script type="text/javascript" src="engine1/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+	  
+   
+	  <div>
+		<ul data-role="listview" data-theme="b" class="ui-listview ui-group-theme-b">
+		<li class="ui-first-child ui-last-child">
+			<a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+				<h2>INICIO DE LA BATALLA</h2>
+				<p>Inicio</p>
+			</a>
+		</li>
+		<li class="ui-first-child ui-last-child">
+			<a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+				<h2>CONCLUSION DE LA BATALLA</h2>
+				<p>Final</p>
+			</a>
+		</li>
+		<li class="ui-first-child ui-last-child">
+			<a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+				<h2>CONSECUENCIAS DE LA BATALA</h2>
+				<p>Consecuencias</p>
+			</a>
+		</li>
+		<li class="ui-first-child ui-last-child">
+			<a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+				<h2>CAUSAS QUE DIERON INICIO ALA BATALLA</h2>
+				<p>Causas</p>
+			</a>
+		</li>
+		<li class="ui-first-child ui-last-child">
+			<a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+				<h2>HISTORIA</h2>
+				<p>Historia</p>
+			</a>
+		</li>
+        <li class="ui-first-child ui-last-child">
+	    <a href="#Pagina6" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+				<h2>MONUMENTOS</h2>
+				<p>Monumentos</p>
+			</a>
+		</li>
+		</ul>
+	</div>
+	<div data-role="footer" align="center" data-theme="b" data-position="fixed">
+		<div>
+			<img src="res/android/mdpi.png" width="46" height="46">
+		</div>
+		<div>
+			<h4>Aplicacion Cuatro</h4>
+			<h4>Silvano Galvez Segundo</h4>
+		</div>
+	 </div>
+	</div>
+    <div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="b">
+      <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+         <h1>INICIO DE LA BATALLA</h1>
+       </div>
+       <div data-role="content" align="center">
+         <div>
+        <h2>Antes del 5 de Mayo, el día  28 de abril de 1862 tuvo lugar un enfrentamiento conocido como la Batalla de las Cumbres entre el Ejército Expedicionario Francés y el Ejército Mexicano. En este conflicto hubieron cerca de 500 bajas francesas en contra de apenas 50 bajas mexicanas. Pese a esto, el Ejército Expedicionario francés consigue hacerse con el control del Paso de Acultzingo.
+        El 5 de mayo a las 9:15am aparecen los franceses en el horizonte pero no es sino hasta las 11:15am cuando comienzan las hostilidades anunciándose con un cañonazo desde el Fuerte de Guadalupe y acompañado por los repiques de las campanas de la ciudad.
+        </h2>
+        <p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image20','','imagenes/batalla.jpg',1)"><img src="imagenes/batalla2.jpg" width="300" height="168" id="Image20"></a>
+         </p>
+         </div>
+        </div>
+        <div data-role="footer" data-theme="b" data-position="fixed">
+           <h4>Aplicacion Cuatro, SGS</h4>
+          </div>
+         </div>
+        </div> 
+        
+      <div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="b">
+      <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+         <h1>CONCLUSION DE LA BATALLA</h1>
+       </div>
+      <div data-role="content" align="center">
+         <div>
+        <h2>A las dos y media de la tarde, cuando los mexicanos empezaban a vislumbrar la victoria, Lorencez se dispuso a lanzar el último asalto, dirigiendo a los Cazadores de Vincennes y el Regimiento de Zuavos hacia Guadalupe. Zaragoza dispuso que el Batallón Reforma de San Luis Potosí saliera en auxilio de los fuertes.
+
+Luego de ser repelidos por última vez, las fuerzas del Ejército Expedicionario Francés comenzaron a huir completamente dispersados. Se replegaron a la hacienda Los Álamos, para finalmente retirarse hacia Amozoc.
+        </h2>
+        <p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image24','','imagenes/batalla6.jpg',1)"><img src="imagenes/batalla3.jpg" width="285" height="177" id="Image24"></a></p>
+      
+         </div>
+        </div>
+        <div data-role="footer" data-theme="b" data-position="fixed">
+           <h4>Aplicacion Cuatro, SGS</h4>
+          </div>
+         </div>
+        </div>
+        
+     <div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="b">
+      <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+         <h1>CONSECUENCIAS DE LA BATALLA</h1>
+       </div>
+       <div data-role="content" align="center">
+       <div>
+       <h2>En Palacio Nacional en la Ciudad de México se sabía poco acerca del conflicto más allá del telegrama recibido a las 12:30 en el que Zaragoza avisaba que el intercambio de fuego había iniciado. A raíz de la incertidumbre el gobierno había hecho salir precipitadamente al general Florencio Antillón al mando de los Batallones de Guanajuato, quedando como guardianes de la capital sólo 2,000 hombres del Regimiento de Coraceros Capitalinos
+       </h2>
+       <p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image25','','imagenes/batalla3.jpg',1)"><img src="imagenes/batalla7.jpg" width="259" height="194" id="Image25"></a></p>
+     
+       </div>
+       </div>
+      
+        <div data-role="footer" data-theme="b" data-position="fixed">
+           <h4>Aplicacion Cuatro, SGS</h4>
+          </div>
+         </div>
+        </div>  
+        
+     <div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="b">
+      <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+         <h1>CAUSAS QUE DIERON INICIO ALA BATALLA</h1>
+       </div>
+     <div data-role="content" align="center">
+     <div>
+     <h2>En octubre de 1861, Francia, Inglaterra y España suscribieron la Convención de Londres, en la cual se comprometieron a enviar contingentes militares a México ya que este tenía una gran deuda de 80 millones de pesos, aproximadamente eran 69 millones para los ingleses, 9 millones para los españoles y 2 millones para Francia.
+
+La alianza tripartita amenazó al presidente Benito Juarez con una invasión inminente si no se saldaba por completo las deudas que México tenía con los tres países europeos.</h2>
+
+     <p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image26','','imagenes/batalla8.jpg',1)"><img src="imagenes/batalla6.jpg" width="277" height="182" id="Image26"></a></p>
+     </div>
+     </div>
+        <div data-role="footer" data-theme="b" data-position="fixed">
+           <h4>Aplicacion Cuatro, SGS</h4>
+          </div>
+         </div>
+        </div> 
+        
+         <div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="b">
+      <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+         <h1>HISTORIA</h1>
+       </div>
+          <div data-role="collapsible" data-content-theme="false">
+     	<h1>HISTORIA DE LA VATALLA DE PUEBBLA</h1>
+         <a href="https://webadictos.com" target="_self">ir ala pagina <img src="imagenes/batalla8.jpg"></a>
+        </div>
+            <div data-role="footer" data-theme="b" data-position="fixed">
+           <h4>Aplicacion Cuatro, SGS</h4>
+          </div>
+         </div>
+        </div> 
+        
+   <div data-role="page" id="Pagina6" data-add-back-btn="true" data-theme="b">
+      <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+         <h1>MONUMENTOS</h1>
+      
+       </div>
+        <div data-role="content" align="center">
+  
+</div>
+    <div data-role="collapsible" data-content-theme="false">
+     	<h1>IMAGENES</h1>
+         <img src="imagenes/monumento.jpg">
+         <img src="imagenes/monumento2.jpg">
+         <img src="imagenes/monumento3.jpg">
+         <img src="imagenes/monumento4.jpg">
+         <img src="imagenes/monumento6.jpg">
+         <img src="imagenes/monumento5.jpg">
+         
+        </div>
+
+        <div data-role="footer" data-theme="b" data-position="fixed">
+           <h4>Aplicacion Cuatro, SGS</h4>
+          </div>
+         </div>
+        </div> 
+ 
+        
+        
+              
+                    
+</body>
+</html>
